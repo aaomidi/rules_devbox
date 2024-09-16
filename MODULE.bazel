@@ -1,6 +1,6 @@
 module(
-  name = "rules_devbox_core",
-  version = "0.0.0",
+    name = "rules_devbox_core",
+    version = "0.0.0",
 )
 
 bazel_dep(name = "platforms", version = "0.0.10")
@@ -13,3 +13,18 @@ bazel_dep(name = "gazelle", version = "0.38.0")
 go_deps = use_extension("@gazelle//:extensions.bzl", "go_deps")
 go_deps.from_file(go_mod = "//:go.mod")
 
+devbox_repo = use_extension("//extensions:repository.bzl", "devbox_repo")
+devbox_repo.lockfile(
+    name = "local_devbox",
+    path = "//:devbox.lock",
+)
+use_repo(devbox_repo, "local_devbox")
+
+# devbox_pkg = use_extension("//extensions:package.bzl", "devbox_pkg")
+# devbox_pkg.pkg(
+#     name = "buildifier",
+# )
+# use_repo(
+#     devbox_pkg,
+#     "buildifier",
+# )

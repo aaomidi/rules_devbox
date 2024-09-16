@@ -1,6 +1,12 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "buildifier@latest": {
+      "last_modified": "2023-02-24T09:01:09Z",
+      "resolved": "github:NixOS/nixpkgs/7d0ed7f2e5aea07ab22ccb338d27fbe347ed2f11#buildifier",
+      "source": "devbox-search",
+      "version": "6.0.1"
+    },
     "go@latest": {
       "last_modified": "2024-09-12T11:58:09Z",
       "resolved": "github:NixOS/nixpkgs/280db3decab4cbeb22a4599bd472229ab74d25e1#go_1_23",
