@@ -1,3 +1,5 @@
 load("@gazelle//:def.bzl", "gazelle")
 
 gazelle(name = "gazelle")
+
+export_files(["devbox.lock"])

@@ -54,6 +54,54 @@
           "store_path": "/nix/store/mi0ybwsm6pmxzv9hsm6bcbqaq1pkf8wh-go-1.23.1"
         }
       }
+    },
+    "pulumi@latest": {
+      "last_modified": "2024-09-10T15:01:03Z",
+      "resolved": "github:NixOS/nixpkgs/5ed627539ac84809c78b2dd6d26a5cebeb5ae269#pulumi",
+      "source": "devbox-search",
+      "version": "3.122.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jnrnzniw9al6rjfckffzl9dsx92ad3va-pulumi-3.122.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jnrnzniw9al6rjfckffzl9dsx92ad3va-pulumi-3.122.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/j0fz1sss67gcr984zfx2zqmdkn3kr7rj-pulumi-3.122.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/j0fz1sss67gcr984zfx2zqmdkn3kr7rj-pulumi-3.122.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ciqna8dj69vjhd9glkyjyfbi77s7apc3-pulumi-3.122.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ciqna8dj69vjhd9glkyjyfbi77s7apc3-pulumi-3.122.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4k6wafqqzq87jhxiqfc57fp3q62y4rk4-pulumi-3.122.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4k6wafqqzq87jhxiqfc57fp3q62y4rk4-pulumi-3.122.0"
+        }
+      }
     }
   }
 }
