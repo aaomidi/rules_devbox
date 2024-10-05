@@ -3,8 +3,7 @@
   "packages": [
     "go@latest",
     "buildifier@latest",
-    "pulumi@latest",
-    "bazel@latest"
+    "pulumi@latest"
   ],
   "shell": {
     "init_hook": [

@@ -7,7 +7,6 @@ load("@rules_nixpkgs_core//:nixpkgs.bzl", "nixpkgs_http_repository", "nixpkgs_pa
 def _devbox_repo_impl(module_ctx):
     lockfiles = []
 
-    # TODO(@aaomidi): Q: Why do we loop over modules?
     for mod in module_ctx.modules:
         for tag in mod.tags.lockfile:
             lockfiles.append(module_ctx.read(tag.path))

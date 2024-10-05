@@ -1,0 +1,9 @@
+sh_binary(
+    name = "pulumi_cli",
+    srcs = [
+        "pulumi_cli.sh",
+    ],
+    data = [
+        "@pulumi//:bin",
+    ],
+)
