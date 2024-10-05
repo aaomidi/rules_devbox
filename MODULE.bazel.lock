@@ -85,12 +85,76 @@
   },
   "selectedYankedVersions": {},
   "moduleExtensions": {
+    "//extensions:package.bzl%devbox_pkg": {
+      "general": {
+        "bzlTransitiveDigest": "N/+KfJlGr3dcyyQ0Pg0hPpfX+swKsMHUiL4ApTpiLRU=",
+        "usagesDigest": "DCCn0HkEwh7GQj8etj4MvXEgBCQnRD643JHa4mG1x0Y=",
+        "recordedFileInputs": {},
+        "recordedDirentsInputs": {},
+        "envVariables": {},
+        "generatedRepoSpecs": {
+          "buildifier": {
+            "bzlFile": "@@rules_nixpkgs_core~//:nixpkgs.bzl",
+            "ruleClassName": "_nixpkgs_package",
+            "attributes": {
+              "unmangled_name": "buildifier",
+              "attribute_path": "buildifier",
+              "nix_file_deps": {
+                "@@_main~devbox_repo~buildifier_nix_repo//:buildifier_nix_repo": "@buildifier_nix_repo"
+              },
+              "nix_file_content": "",
+              "repository": "@@_main~devbox_repo~buildifier_nix_repo//:buildifier_nix_repo",
+              "repositories": {},
+              "build_file_content": "",
+              "nixopts": [],
+              "quiet": false,
+              "fail_not_supported": true
+            }
+          },
+          "pulumi": {
+            "bzlFile": "@@rules_nixpkgs_core~//:nixpkgs.bzl",
+            "ruleClassName": "_nixpkgs_package",
+            "attributes": {
+              "unmangled_name": "pulumi",
+              "attribute_path": "pulumi",
+              "nix_file_deps": {
+                "@@_main~devbox_repo~pulumi_nix_repo//:pulumi_nix_repo": "@pulumi_nix_repo"
+              },
+              "nix_file_content": "",
+              "repository": "@@_main~devbox_repo~pulumi_nix_repo//:pulumi_nix_repo",
+              "repositories": {},
+              "build_file_content": "",
+              "nixopts": [],
+              "quiet": false,
+              "fail_not_supported": true
+            }
+          }
+        },
+        "recordedRepoMappingEntries": [
+          [
+            "",
+            "rules_nixpkgs_core",
+            "rules_nixpkgs_core~"
+          ],
+          [
+            "rules_nixpkgs_core~",
+            "bazel_skylib",
+            "bazel_skylib~"
+          ],
+          [
+            "rules_nixpkgs_core~",
+            "bazel_tools",
+            "bazel_tools"
+          ]
+        ]
+      }
+    },
     "//extensions:repository.bzl%devbox_repo": {
       "general": {
-        "bzlTransitiveDigest": "1L+ohV97Dzbg6xY86jKodR/RlYJ+n412unxk0jbw2tA=",
-        "usagesDigest": "odpEMVSrQKahRK79ToZyR0WLZYThvCsUEtDtAAVaPAs=",
+        "bzlTransitiveDigest": "FMGpBoshB/zwZYP89G8Y5UYMnsqgub3lHy7GrMFqAMc=",
+        "usagesDigest": "U2fPkWsjSebuCWqFHr/reM1R+5a4xBK+l/t0vXfYBVQ=",
         "recordedFileInputs": {
-          "@@//devbox.lock": "f28d84b585ce4bd4ad50e08741ee7a22914c6565eaef54a4f9be177312c53903"
+          "@@//devbox.lock": "cc1a3b25d511be8791fc30c8b15d660084f01813eaae12327df06b2eb1f83dc2"
         },
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -102,6 +166,24 @@
               "unmangled_name": "go_1_23_nix_repo",
               "url": "https://github.com/NixOS/nixpkgs/archive/280db3decab4cbeb22a4599bd472229ab74d25e1.tar.gz",
               "strip_prefix": "nixpkgs-280db3decab4cbeb22a4599bd472229ab74d25e1"
+            }
+          },
+          "pulumi_nix_repo": {
+            "bzlFile": "@@rules_nixpkgs_core~//:nixpkgs.bzl",
+            "ruleClassName": "_nixpkgs_http_repository",
+            "attributes": {
+              "unmangled_name": "pulumi_nix_repo",
+              "url": "https://github.com/NixOS/nixpkgs/archive/5ed627539ac84809c78b2dd6d26a5cebeb5ae269.tar.gz",
+              "strip_prefix": "nixpkgs-5ed627539ac84809c78b2dd6d26a5cebeb5ae269"
+            }
+          },
+          "bazel_nix_repo": {
+            "bzlFile": "@@rules_nixpkgs_core~//:nixpkgs.bzl",
+            "ruleClassName": "_nixpkgs_http_repository",
+            "attributes": {
+              "unmangled_name": "bazel_nix_repo",
+              "url": "https://github.com/NixOS/nixpkgs/archive/5ed627539ac84809c78b2dd6d26a5cebeb5ae269.tar.gz",
+              "strip_prefix": "nixpkgs-5ed627539ac84809c78b2dd6d26a5cebeb5ae269"
             }
           },
           "buildifier_nix_repo": {

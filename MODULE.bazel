@@ -16,11 +16,18 @@ go_deps.from_file(go_mod = "//:go.mod")
 
 devbox_repo = use_extension("//extensions:repository.bzl", "devbox_repo")
 devbox_repo.lockfile(
-    name = "local_devbox",
     path = "//:devbox.lock",
 )
-use_repo(devbox_repo, "buildifier_nix_repo")
+use_repo(devbox_repo, "buildifier_nix_repo", "pulumi_nix_repo")
 
+devbox_pkg = use_extension("//extensions:package.bzl", "devbox_pkg")
+devbox_pkg.pkg(
+    pkg = "buildifier",
+)
+devbox_pkg.pkg(
+    pkg = "pulumi",
+)
+use_repo(devbox_pkg, "pulumi")
 # devbox_pkg = use_extension("//extensions:package.bzl", "devbox_pkg")
 # devbox_pkg.pkg(
 #     name = "buildifier",

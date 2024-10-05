@@ -1,6 +1,54 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "bazel@latest": {
+      "last_modified": "2024-09-10T15:01:03Z",
+      "resolved": "github:NixOS/nixpkgs/5ed627539ac84809c78b2dd6d26a5cebeb5ae269#bazel",
+      "source": "devbox-search",
+      "version": "6.5.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8g29cba4bkz736gkv3pvxjrchid570vp-bazel-6.5.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8g29cba4bkz736gkv3pvxjrchid570vp-bazel-6.5.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/3nrjwjrldd7xhvwxgv4v0nl82j01h701-bazel-6.5.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/3nrjwjrldd7xhvwxgv4v0nl82j01h701-bazel-6.5.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/81mir7i92l5svjnhb9x1yqi6f3im5cpr-bazel-6.5.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/81mir7i92l5svjnhb9x1yqi6f3im5cpr-bazel-6.5.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/z7rfm3879ic91iqkykqy2r5j9c1przp9-bazel-6.5.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/z7rfm3879ic91iqkykqy2r5j9c1przp9-bazel-6.5.0"
+        }
+      }
+    },
     "buildifier@latest": {
       "last_modified": "2023-02-24T09:01:09Z",
       "resolved": "github:NixOS/nixpkgs/7d0ed7f2e5aea07ab22ccb338d27fbe347ed2f11#buildifier",
@@ -52,6 +100,54 @@
             }
           ],
           "store_path": "/nix/store/mi0ybwsm6pmxzv9hsm6bcbqaq1pkf8wh-go-1.23.1"
+        }
+      }
+    },
+    "pulumi@latest": {
+      "last_modified": "2024-09-10T15:01:03Z",
+      "resolved": "github:NixOS/nixpkgs/5ed627539ac84809c78b2dd6d26a5cebeb5ae269#pulumi",
+      "source": "devbox-search",
+      "version": "3.122.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/jnrnzniw9al6rjfckffzl9dsx92ad3va-pulumi-3.122.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/jnrnzniw9al6rjfckffzl9dsx92ad3va-pulumi-3.122.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/j0fz1sss67gcr984zfx2zqmdkn3kr7rj-pulumi-3.122.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/j0fz1sss67gcr984zfx2zqmdkn3kr7rj-pulumi-3.122.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/ciqna8dj69vjhd9glkyjyfbi77s7apc3-pulumi-3.122.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/ciqna8dj69vjhd9glkyjyfbi77s7apc3-pulumi-3.122.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4k6wafqqzq87jhxiqfc57fp3q62y4rk4-pulumi-3.122.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4k6wafqqzq87jhxiqfc57fp3q62y4rk4-pulumi-3.122.0"
         }
       }
     }
